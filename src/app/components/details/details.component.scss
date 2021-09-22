@@ -48,7 +48,14 @@
 
         &-img {
             width: 100%;
-            filter: blur(5px);
+            filter: grayscale(0.2) blur(2.5px);
+
+            ::before {
+                content: '';
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.226));
+            }
         }
     }
 
